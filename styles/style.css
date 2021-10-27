@@ -1,9 +1,46 @@
 body{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/home-background-2.jpeg');
+    background-position: center;
 }
 img{
     height:auto;
-    width: 100px;
+    width: 150px;
+}
+#name-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-weight: bold;
+}
+h1{
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 2rem;
+}
+#name-p{
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.3rem;
+}
+pirate{
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.3rem;
+}
+label{
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1rem;
 }

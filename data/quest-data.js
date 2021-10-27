@@ -1,8 +1,9 @@
 const marines = {
     id: 'marines',
-    title: 'A Group of Marines',
+    title: 'A Group of Marines ',
     map:{
-
+        top: '80%',
+        left: '70%'
     },
     image: '../assets/marines.png',
     description: `
@@ -48,7 +49,8 @@ const seaking = {
     id: 'seaking',
     title:'A Massive Seaking',
     map: {
-
+        top: '20%',
+        left: '33%'
     },
     image: '../assets/seaking.jpeg',
     description:`
@@ -94,12 +96,12 @@ const seaking = {
 
 const village = {
     id: 'village',
-    title: 'A Village Offer',
+    title: ' A Village Offer',
     map: {
-
+        top: '55%',
+        left: '10%'
     },
-    prerequisites: ['marines', 'seaking'],
-    image: '../assets/village',
+    image: '../assets/village.png',
     description:`
     As you enter a local village you are greeted by three people.
     Just when you think you can relax you get a tip that the marines

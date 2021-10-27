@@ -41,3 +41,19 @@ export function hasCompletedAllQuests(userObject){
     }
     return true;
 }
+    
+export function userProfile(){
+    const user = getUser();
+
+    const img = document.getElementById('pirate-header');
+    img.src = `../assets/${user.pirate}.jpeg`;
+
+    const name = document.getElementById('name-header');
+    name.textContent = user.name;
+
+    const gold = document.getElementById('gold-header');
+    gold.textContent = `Gold: ${user.gold}`;
+
+    const hp = document.getElementById('hp-header');
+    hp.textContent = `HP: ${user.hp}`;
+}

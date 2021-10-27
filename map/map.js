@@ -1,6 +1,7 @@
 import quests from '../data/quest-data.js';
-import { getUser, hasCompletedAllQuests } from '../utils.js';
+import { getUser, hasCompletedAllQuests, userProfile } from '../utils.js';
 
+userProfile();
 const mapLinks = document.getElementById('map-links');
 
 const user = getUser();
@@ -32,6 +33,9 @@ function displayLink(quest){
 
 function displaySpan(quest){
     const span = document.createElement('span');
+    span.classList.add('quest');
+    span.style.top = quest.map.top;
+    span.style.left = quest.map.left;
     span.textContent = quest.title;
 
     mapLinks.appendChild(span);

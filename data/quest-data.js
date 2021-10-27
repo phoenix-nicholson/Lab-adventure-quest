@@ -2,8 +2,8 @@ const marines = {
     id: 'marines',
     title: 'A Group of Marines ',
     map:{
-        top: '70%',
-        left: '39%'
+        top: '10%',
+        left: '45%'
     },
     image: '../assets/marines.png',
     background:'../assets/marine-background.png',
@@ -101,7 +101,7 @@ const village = {
     title: ' A Village Offer',
     map: {
         top: '80%',
-        left: '70%'
+        left: '42%'
     },
     image: '../assets/village.png',
     background:'../assets/village-background.jpeg',

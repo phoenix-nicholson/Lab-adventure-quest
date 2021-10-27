@@ -9,6 +9,7 @@ const title = document.getElementById('quest-title');
 title.textContent = questData.title;
 const img = document.getElementById('quest-image');
 img.src = `../quests/${questData.image}`;
+document.body.style.background = `../quests/${questData.background}`;
 
 const description = document.getElementById('quest-description');
 description.textContent = questData.description;

@@ -12,7 +12,7 @@ export function generateUser(formData){
     return {
         completed: {},
         gold: 0,
-        hp: 50,
+        hp: 100,
         name: formData.get('name'),
         pirate: formData.get('pirate'),
     };

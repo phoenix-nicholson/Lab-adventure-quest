@@ -22,7 +22,7 @@ test('generateUser should return a userObject', (expect) => {
     const expected = {
         completed: {},
         gold: 0,
-        hp: 50,
+        hp: 100,
         name: 'phoenix',
         pirate: 'luffy',
     };
@@ -40,7 +40,7 @@ test('setUser should save your localStorage', (expect)=>{
     const userObject = {
         completed: {},
         gold: 0,
-        hp: 50,
+        hp: 100,
         name: 'phoenix',
         pirate: 'luffy',
     };
@@ -54,7 +54,7 @@ test('getUser should return the user object from localStorage', (expect)=>{
     const userObject = {
         completed: {},
         gold: 0,
-        hp: 50,
+        hp: 100,
         name: 'phoenix',
         pirate: 'luffy',
     };
@@ -67,7 +67,7 @@ test('scoreQuest should update gold, hp and completed on the userObject', (expec
     const userObject = {
         completed: {},
         gold: 0,
-        hp: 50,
+        hp: 100,
         name: 'phoenix',
         pirate: 'luffy',
     };
@@ -88,7 +88,23 @@ test('scoreQuest should update gold, hp and completed on the userObject', (expec
 
     scoreQuest(choiceObject, questId, userObject);
 
-    expect.equal(userObject.hp, 25);
+    expect.equal(userObject.hp, 75);
     expect.equal(userObject.gold, 50);
     expect.equal(userObject.completed[questId], true);
+});
+
+test('hasCompletedAllQuests returns true if the user has completed all quest', (expect)=> {
+    const userObject = {
+        completed: { marines: true, seaking: true, village: true },
+    };
+    const actual = hasCompletedAllQuests(userObject);
+    expect.equal(actual, true);
+});
+
+test('hasCompletedAllQuests returns false if the user has not completed all quests', (expect)=>{
+    const userObject = {
+        completed: { marines: true, village: true }
+    };
+    const actual = hasCompletedAllQuests(userObject);
+    expect.equal(actual, false);
 });

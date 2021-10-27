@@ -2,15 +2,16 @@ import quests from '../data/quest-data.js';
 import { getUser, hasCompletedAllQuests } from '../utils.js';
 
 const mapLinks = document.getElementById('map-links');
-console.log(mapLinks);
 
 const user = getUser();
 
-// if (user.hp <= 0 || hasCompletedAllQuests(user)){
-//     window.location.replace;
-// }
+if (user.hp <= 0 || hasCompletedAllQuests(user)){
+    window.location.replace('../endgame');
+}
+
 
 for (let quest of quests){
+
     if (user.completed[quest.id]){
         displaySpan(quest);
     } else {
@@ -27,7 +28,7 @@ function displayLink(quest){
 }
 
 function displaySpan(quest){
-    const span = document.getElementById('span');
+    const span = document.createElement('span');
     span.textContent = quest.title;
 
     mapLinks.appendChild(span);

@@ -11,37 +11,40 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-
+    <h1>Choose Your Pirate!</h1>
     <form id="user-form">
-        <label for="name">
-            Your Pirate Name:
+        <label id="name-input" for="name">
+           <p id="name-p"> Your Pirate Name: </p>
             <input type="text" name="name">
         </label>
         <pirate>Pick your Pirate:</pirate>
         <p id="avatars">
             <label>
+                Luffy
                 <input type="radio" name="pirate" required value="Luffy">
                 <img src="./assets/luffy-2.jpeg">
-                Luffy
             </label>
             <label>
+                Zoro
                 <input type="radio" name="pirate" required value="Zoro">
                 <img src="./assets/zoro.jpeg">
-                Zoro
             </label>
             <label>
+                Nami
                 <input type="radio" name="pirate" required value="Nami">
                 <img src="./assets/nami.jpeg">
-                Nami
             </label>
             <label>
+                Robin
                 <input type="radio" name="pirate" required value="Robin">
                 <img src="./assets/robin.png">
-                Robin
             </label>
         </p>
         <button>Start Your Journey!</button>

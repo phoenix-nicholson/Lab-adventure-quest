@@ -14,11 +14,15 @@ img{
     flex-direction: column;
     align-items: center;
 }
-button{
+.home-btn{
     display: flex;
     flex-direction: column;
     margin: auto;
     font-weight: bold;
+    font-size: 2rem;
+    border: 3px solid black;
+    background-color:transparent;
+    border-radius: 100px;
 }
 h1{
     font-family: 'Irish Grover', cursive;
@@ -38,7 +42,7 @@ pirate{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 1.3rem;
 }
-label{
+#label{
     font-family: 'Irish Grover', cursive;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;

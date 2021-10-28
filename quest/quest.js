@@ -1,5 +1,7 @@
 import quests from '../data/quest-data.js';
-import { findById, getUser, setUser, scoreQuest } from '../utils.js';
+import { findById, getUser, setUser, scoreQuest, userProfile } from '../utils.js';
+
+userProfile();
 
 const params = new URLSearchParams(window.location.search);
 
@@ -9,6 +11,7 @@ const title = document.getElementById('quest-title');
 title.textContent = questData.title;
 const img = document.getElementById('quest-image');
 img.src = `../quests/${questData.image}`;
+document.body.style.background = `../quests/${questData.background}`;
 
 const description = document.getElementById('quest-description');
 description.textContent = questData.description;

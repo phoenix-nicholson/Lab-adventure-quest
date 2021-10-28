@@ -2,10 +2,11 @@ const marines = {
     id: 'marines',
     title: 'A Group of Marines ',
     map:{
-        top: '80%',
-        left: '70%'
+        top: '10%',
+        left: '45%'
     },
     image: '../assets/marines.png',
+    background:'../assets/marine-background.png',
     description: `
     You embark on your journey on a new island, but wait! There 
     seem to be marines and they don't look happy. What do you do?
@@ -49,10 +50,11 @@ const seaking = {
     id: 'seaking',
     title:'A Massive Seaking',
     map: {
-        top: '20%',
-        left: '33%'
+        top: '22%',
+        left: '26%'
     },
     image: '../assets/seaking.jpeg',
+    background:'../assets/seaking-background.jpeg',
     description:`
     As you are sailing to the nearest island your ship is approached
     by a very hungry seaking! What do you do?
@@ -98,10 +100,11 @@ const village = {
     id: 'village',
     title: ' A Village Offer',
     map: {
-        top: '55%',
-        left: '10%'
+        top: '80%',
+        left: '42%'
     },
     image: '../assets/village.png',
+    background:'../assets/village-background.jpeg',
     description:`
     As you enter a local village you are greeted by three people.
     Just when you think you can relax you get a tip that the marines

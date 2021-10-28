@@ -1,0 +1,29 @@
+header{
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    font-size: 2rem;
+}
+#pirate-header{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+button{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 3px solid pink;
+    background-color:pink;
+    border-radius: 100px;
+    color: black;
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'Irish Grover', cursive;
+}

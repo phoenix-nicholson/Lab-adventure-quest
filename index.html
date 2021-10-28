@@ -21,33 +21,36 @@
     <h1>Choose Your Pirate!</h1>
     <form id="user-form">
         <label id="name-input" for="name">
-           <p id="name-p"> Your Pirate Name: </p>
+        <p id="name-p"> Your Pirate Name: </p>
             <input type="text" name="name">
         </label>
         <pirate>Pick your Pirate:</pirate>
         <p id="avatars">
-            <label>
+            <label class="label">
                 Luffy
                 <input type="radio" name="pirate" required value="Luffy">
-                <img src="./assets/luffy-2.jpeg">
+                <img src="./assets/luffy.jpeg">
             </label>
-            <label>
+            <label class="label">
                 Zoro
                 <input type="radio" name="pirate" required value="Zoro">
                 <img src="./assets/zoro.jpeg">
             </label>
-            <label>
+            <label class="label">
                 Nami
                 <input type="radio" name="pirate" required value="Nami">
                 <img src="./assets/nami.jpeg">
             </label>
-            <label>
+            <label class="label">
                 Robin
                 <input type="radio" name="pirate" required value="Robin">
-                <img src="./assets/robin.png">
+                <img src="./assets/robin.jpeg">
             </label>
         </p>
-        <button>Start Your Journey!</button>
+        <div class="container">
+        <button class="home-btn">Start Your Journey!</button>
+        </div>
+        </div>
     </form>
     <script type="module" src="./app.js"></script>
 </body>
